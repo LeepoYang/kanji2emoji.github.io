@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <title>Emoji自动生成</title>
     <style>
+        body{
+            margin: 0 auto;
+            width: 960px;
+        }
+        #input{
+            width: 400px;
+            height: 200px;
+            font-size: 14px;
+            font-family:"Times New Roman", Times, serif;
+
+        }
         #output{
-            width: 200px;
-            height: 100px;
-            background-color: rgb(85, 159, 220);
+            width: 400px;
+            height: 200px;
+            border: 1px solid ;
+            font-family:"Times New Roman", Times, serif;
         }
     </style>
 </head>
 <body>
 <h1>Emoji自动生成工具</h1>
-<h3>输入原始文本</h3>
-<h4>目前只支持单个字符</h4>
-<textarea id="input"></textarea>
+<h3>输入原始文本 按确认转换</h3>
+
+<textarea id="input">可！非常适合小红书中的文案</textarea>
 
 <button id="submit">确定</button>
 
@@ -24,7 +36,6 @@
 <button id="tosee">查看支持的emoji</button>
 <div id="toseediv"></div>
 
-<!--<script src="conversion.js"></script>-->
 </body>
 
 <script src="./src/index.js"></script>
